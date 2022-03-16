@@ -85,6 +85,7 @@ export default {
       max-height: 100%
       cursor: pointer
       .arrow-right
+        margin: 0 1rem
         position: absolute
         max-width: 10%
         right: 0
@@ -95,6 +96,7 @@ export default {
         &:hover
           opacity: 0.7
       .arrow-left
+        margin: 0 1rem
         position: absolute
         max-width: 10%
         left: 0
@@ -115,9 +117,12 @@ export default {
 .fade-enter,
 .fade-leave-to
   opacity: 0
+@media (min-width: 375px)
+  .img-boxex
+    height: 235px !important
 @media (min-width: 475px)
   .img-boxex
-    height: 300px
+    height: 300px !important
 @media (min-width: 960px)
   .img-boxex
     &:hover .arrow

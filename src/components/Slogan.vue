@@ -1,6 +1,6 @@
 <template>
   <div class="slogan-container">
-    <span>中心中醫</span>
+    <img class="slogan" alt="slogan" src="../assets/sloganFont.jpg" />
   </div>
 </template>
 
@@ -8,9 +8,12 @@
 <style lang="sass" scoped>
 .slogan-container
   width: 100%
-  height: 330px
+  height: 450px
   margin-top: 10px
-  background-color: gray
-  span
-    margin: 0 auto
+  background: url(../assets/sloganBG.png) no-repeat center 75px
+  background-size: contain
+  text-align: center
+  img
+    width: 140px
+    margin: 80px auto
 </style>

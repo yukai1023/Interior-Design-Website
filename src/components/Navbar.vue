@@ -31,39 +31,22 @@
 
     <div id="navbarSupportedContent" class="navbar-collapse collapse">
       <div class="ml-auto d-flex align-items-center">
-        <!-- is user is admin -->
-        <router-link to="/admin/restaurants" class="text-white mr-3">
-          管理員後台
-        </router-link>
-
-        <template>
-          <router-link to="#" class="text-white mr-3"> 您好 </router-link>
-          <button
-            type="button"
-            class="btn btn-sm btn-outline-success my-2 my-sm-0"
-            @click="logout"
-          >
-            登出
-          </button>
-        </template>
+        <p>首頁</p>
+      </div>
+      <div class="ml-auto d-flex align-items-center">
+        <p>關於我們</p>
+      </div>
+      <div class="ml-auto d-flex align-items-center">
+        <p>作品集</p>
+      </div>
+      <div class="ml-auto d-flex align-items-center">
+        <p>客戶服務</p>
       </div>
     </div>
   </nav>
 </template>
 
-<script>
-export default {
-  methods: {
-    logout() {
-      this.$store.commit("revokeAuthentication");
-      this.$router.push("/signin");
-    },
-  },
-};
-</script>
-
 <style lang="sass" scoped>
-
 .navbar-toggler
   min-width: 70px
   margin-right: 0
@@ -87,4 +70,13 @@ nav.bg-dark
 .navbar-brand
   font-size: 19px
   padding: 0
+
+.align-items-center
+  cursor: pointer
+  border-top: 1px solid #E6ECF0
+  height: 70px
+  justify-content: center
+  font-weight: 700
+  letter-spacing: 3px
+  font-size: 18px
 </style>
