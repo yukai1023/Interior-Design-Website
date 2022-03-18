@@ -14,8 +14,15 @@
     "
   >
     <div class="logo-container">
-      <img class="logo" alt="logo" src="../assets/logo.png" />
-      <img class="logoFont" alt="logoFont" src="../assets/logoFont.png" />
+      <router-link
+        class="logo-link"
+        :to="{
+          name: 'Home',
+        }"
+      >
+        <img class="logo" alt="logo" src="../assets/logo.png" />
+        <img class="logoFont" alt="logoFont" src="../assets/logoFont.png" />
+      </router-link>
     </div>
     <button
       class="navbar-toggler"
@@ -31,16 +38,44 @@
 
     <div id="navbarSupportedContent" class="navbar-collapse collapse">
       <div class="ml-auto d-flex align-items-center">
-        <p>首頁</p>
+        <router-link
+          class="font"
+          :to="{
+            name: 'Home',
+          }"
+        >
+          首頁
+        </router-link>
       </div>
       <div class="ml-auto d-flex align-items-center">
-        <p>關於我們</p>
+        <router-link
+          class="font"
+          :to="{
+            name: 'About',
+          }"
+        >
+          關於我們
+        </router-link>
       </div>
       <div class="ml-auto d-flex align-items-center">
-        <p>作品集</p>
+        <router-link
+          class="font"
+          :to="{
+            name: 'Works',
+          }"
+        >
+          作品集
+        </router-link>
       </div>
       <div class="ml-auto d-flex align-items-center">
-        <p>客戶服務</p>
+        <router-link
+          class="font"
+          :to="{
+            name: 'Process',
+          }"
+        >
+          服務流程
+        </router-link>
       </div>
     </div>
   </nav>
@@ -57,6 +92,7 @@
   display: flex
   .logo
     width: 70px
+    border: none
   .logoFont
     width: 180px
     object-fit: fill
@@ -79,4 +115,26 @@ nav.bg-dark
   font-weight: 700
   letter-spacing: 3px
   font-size: 18px
+  .font
+    text-decoration: none
+    color: black
+
+.router-link-exact-active
+  color: #CF8A08 !important
+@media (min-width: 991px)
+  .navbar
+    padding: 0.5rem 13% !important
+  .align-items-center
+    border-top: none
+    height: 50px
+    .font
+      &:hover
+        color: #CF8A08 !important
+        border-bottom: 3px solid #CF8A08
+        transition: all .5s ease
+  .router-link-exact-active
+    color: #CF8A08 !important
+    border-bottom: 3px solid #CF8A08
+  .logo-link
+    border: none
 </style>

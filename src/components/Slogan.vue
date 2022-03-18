@@ -16,4 +16,11 @@
   img
     width: 140px
     margin: 80px auto
+
+@media (min-width: 960px)
+  .slogan-container
+    height: 550px
+    margin: 20px 0
+    img
+      width: 180px
 </style>

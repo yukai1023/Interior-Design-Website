@@ -37,6 +37,7 @@
 <style lang="sass" scoped>
 .portfolio-container
   width: 100%
+  margin-bottom: 120px
   .portfolio-bg
     background: url(../assets/portfolioBG.png) no-repeat center 40px
     height: 100%
@@ -68,7 +69,8 @@
         object-fit: cover
         margin: 0px auto 0
         &:hover
-          opacity: 0.7
+          filter: grayscale(30%)
+          filter: contrast(70%)
         + span
           display: block
           max-width: 320px

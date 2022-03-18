@@ -123,11 +123,32 @@ export default {
 @media (min-width: 475px)
   .img-boxex
     height: 300px !important
+@media (min-width: 575px)
+  .img-boxex
+    height: 370px !important
+@media (min-width: 675px)
+  .img-boxex
+    height: 440px !important
+@media (min-width: 775px)
+  .img-boxex
+    height: 510px !important
+@media (min-width: 875px)
+  .img-boxex
+    height: 580px !important
 @media (min-width: 960px)
   .img-boxex
     &:hover .arrow
       display: block
       animation: fadein 1s ease
+    .showImg
+      object-fit: cover
+      height: 600px
+      width: 2000px
+      max-width: 100%
     .arrow
       display: none
+      .arrow-right
+        width: 5%
+      .arrow-left
+        width: 5%
 </style>

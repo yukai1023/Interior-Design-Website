@@ -31,5 +31,5 @@ export default {
 
 <style lang="sass" scoped>
 .wrapper
-  flex-grow: 1; /*可佔滿垂直剩餘的空間*/
+  flex-grow: 1;
 </style>

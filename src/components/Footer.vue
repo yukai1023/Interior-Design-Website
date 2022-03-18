@@ -40,7 +40,6 @@
   position: relative
   width: 100%
   height: 250px
-  margin-top: 120px
   background-color: #333
   .inner
     width: 90%
@@ -87,4 +86,19 @@
     font-size: 12px
     right: 5px
     bottom: 10px
+
+@media (min-width: 960px)
+  .footer
+    height: 190px
+    .inner
+      display: flex
+      width: 60%
+      .left-inner
+        width: 70%
+      .right-inner
+        margin: 0
+        width: 30%
+    .bottom
+      right: 30px
+      bottom: 10px
 </style>

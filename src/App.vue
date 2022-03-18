@@ -12,6 +12,12 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 export default {
   name: "App",
+  watch: {
+    $route: function () {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    },
+  },
 };
 </script>
 
@@ -32,7 +38,6 @@ export default {
   font-weight: bold;
   color: #2c3e50;
 }
-
 
 #nav a.router-link-exact-active {
   color: #42b983;
