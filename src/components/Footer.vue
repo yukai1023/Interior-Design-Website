@@ -13,18 +13,12 @@
       <div class="right-inner">
         <p class="title"><strong>Follow Us</strong></p>
         <div class="content">
-          <img
-            href="https://www.facebook.com/yhousedesign/?ref=page_internal"
-            class="icon"
-            alt="icon"
-            src="../assets/icon-Facebook.png"
-          />
-          <img
-            href="https://www.instagram.com/yhousedesign/"
-            class="icon"
-            alt="icon"
-            src="../assets/icon-Instagram.png"
-          />
+          <a href="https://www.facebook.com/yhousedesign/?ref=page_internal"
+            ><img class="icon" alt="icon" src="../assets/icon-Facebook.png"
+          /></a>
+          <a href="https://www.instagram.com/yhousedesign/">
+            <img class="icon" alt="icon" src="../assets/icon-Instagram.png"
+          /></a>
         </div>
       </div>
     </div>

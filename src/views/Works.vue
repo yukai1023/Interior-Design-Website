@@ -10,28 +10,34 @@
       </div>
       <div class="portfolio">
         <div class="work">
-          <img
-            class="work-img"
-            alt="work-img"
-            src="../assets/portfolio-1.jpg"
-          />
-          <span>日光微風 李宅</span>
+          <router-link class="link" :to="{ name: 'Work', params: { id: 1 } }">
+            <img
+              class="work-img"
+              alt="work-img"
+              src="../assets/portfolio-1.jpg"
+            />
+            <span>日光微風 李宅</span>
+          </router-link>
         </div>
         <div class="work">
-          <img
-            class="work-img"
-            alt="work-img"
-            src="../assets/portfolio-2.jpg"
-          />
-          <span>微甜居所 魏宅</span>
+          <router-link class="link" :to="{ name: 'Work', params: { id: 2 } }">
+            <img
+              class="work-img"
+              alt="work-img"
+              src="../assets/portfolio-2.jpg"
+            />
+            <span>微甜居所 魏宅</span>
+          </router-link>
         </div>
         <div class="work">
-          <img
-            class="work-img"
-            alt="work-img"
-            src="../assets/portfolio-3.jpg"
-          />
-          <span>Life。Live 杜宅</span>
+          <router-link class="link" :to="{ name: 'Work', params: { id: 3 } }">
+            <img
+              class="work-img"
+              alt="work-img"
+              src="../assets/portfolio-3.jpg"
+            />
+            <span>Life。Live 杜宅</span>
+          </router-link>
         </div>
       </div>
     </div>
@@ -104,6 +110,9 @@ export default {
       text-align: left
       font-weight: 700
 
+.link
+  text-decoration: none
+  color: black
 @media (min-width: 600px)
   .img
     height: 150px
